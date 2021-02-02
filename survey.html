@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey on code examples</title>
+  <link rel="stylesheet" href="survey.css" type="text/css" />
+</head>
+
+<body>
+  <div id="main-wrapper">
+    <main>
+      <h1 id="title">What kind of code example projects are best?</h1>
+      <p id="description">A sample survey (does not currently actualy record any answers) about what coding projects you
+        would like to see from a developer.</p>
+      <form id="survey-form">
+
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="First Last" required>
+
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" pattern=".+@.+" placeholder="me@mycompany.domain" required>
+
+        <label id="number-label" for="number">Rate this survey (1-10)</label>
+        <input id="number" name="number" type="number" min="1" max="10" placeholder="1">
+
+        <label id="dropdown-label" for="dropdown">Code examples</label>
+        <select id="dropdown">
+          <option value="PHP">PHP Projects</option>
+          <option value="JAVA">JAVA Projects</option>
+          <option value="HTML">HTML/CSS/Javascript</option>
+          <option value="NODE">Node.js</option>
+        </select>
+
+        <fieldset>
+          <legend>Type of Projects</legend>
+          <input id="box-1" type="checkbox" name="box" value="portfolio">
+          <label for="box-1">Portfolio Site</label>
+          
+          <input id="box-2" type="checkbox" name="box" value="github">
+          <label for="box-2">Github code</label>
+          
+          <input id="box-3" type="checkbox" name="box" value="other">
+          <label for="box-3">Other</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Why do you care about the them?</legend>
+          <input id="radio-1" type="radio" name="care" value="skills">
+          <label for="radio-1">Candidates skills</label>
+
+          <input id="radio-2" type="radio" name="care" value="learning">
+          <label for="radio-2">Learning from them</label>
+
+        </fieldset>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments"></textarea>
+        <br />
+        <input id="submit" type="submit" name="submit">
+      </form>
+    </main>
+  </div>
+
+  <footer>
+    <p id="why">This sample product landing page is built for the <a
+        href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+        target="_blank">Responsive Web Design Projects - Build a Survey Form</a> challenge.
+    </p>
+    <p>Written by Ross Schlie as per <a href="https://www.freecodecamp.org/news/academic-honesty-policy/" target="_blank">the Academic Honesty pledge</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

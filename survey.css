@@ -1,0 +1,53 @@
+#main-wrapper {
+  display: grid;
+  grid-template-areas: 
+    ". content .";
+  grid-template-columns: 30% 40% 30%;
+}
+
+main {
+  grid-area: content;
+  background-color: cornflowerblue;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#survey-form {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#survey-form label, input, select, textarea {
+  margin: 1em;
+}
+
+#submit {
+  width: 5em;
+  align-self: center;
+  /* fancy rounding? */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #CCCCCC;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #main-wrapper {
+    grid-template-columns: 15% 70% 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  #main-wrapper {
+    grid-template-columns: 1% 98% 1%;
+  }
+}

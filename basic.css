@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    width: 60vw;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #DDDDDD;
+    padding-left: 10em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-self: end;
+}
